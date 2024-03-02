@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/simple-todo/static/js/main.2a47cd7a.js",
+    "static/media/Inter.ttf": "/simple-todo/static/media/Inter.853e01975d2783d9fa29.ttf",
+    "index.html": "/simple-todo/index.html",
+    "main.2a47cd7a.js.map": "/simple-todo/static/js/main.2a47cd7a.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.2a47cd7a.js"
+  ]
+}

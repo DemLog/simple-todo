@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {FC} from 'react';
+import {MainPage} from "@pages/MainPage";
+import GlobalStyles from "styles/global";
+import {QueryClient, QueryClientProvider} from "react-query";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const queryClient = new QueryClient()
+
+const App: FC = () => {
+    return (
+        <QueryClientProvider client={queryClient}>
+            <MainPage/>
+            <GlobalStyles />
+        </QueryClientProvider>
+
+    );
 }
 
 export default App;
